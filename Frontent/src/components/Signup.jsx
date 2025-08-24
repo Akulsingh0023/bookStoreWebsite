@@ -94,14 +94,15 @@ function Signup() {
                             <div className="flex justify-around mt-4">
                                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">Signup</button>
                                 <p className="text-xl">Have account?
-                                    <button className="underline text-blue-500 cursor-pointer"
+                                    <button className="underline text-blue-500 cursor-pointer ml-1"
                                         onClick={() =>
                                             document.getElementById("my_modal_3").showModal()
                                         }
                                     >
-                                        Login
+                                        Login 
                                     </button>
                                     <Login />
+                                    {/* <Link to="/"/> */}
                                 </p>
                             </div>
                         </form>
