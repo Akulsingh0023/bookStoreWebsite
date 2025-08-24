@@ -1,90 +1,146 @@
 [
-    {
-        "id":1,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    },
-    {
-        "id":2,
-        "name":"Comedy Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":20,
-        "category":"Entertainment",
-        "image":"image.jpg"
-    },
-    {
-        "id":3,
-        "name":"Sports Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":50,
-        "category":"sports",
-        "image":"image.jpg"
-    },
-    {
-        "id":4,
-        "name":"Music Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":100,
-        "category":"song",
-        "image":"image.jpg"
-    },
-    {
-        "id":5,
-        "name":"Food Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":200,
-        "category":"Food",
-        "image":"image.jpg"
-    },
-    {
-        "id":6,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    },
-    {
-        "id":7,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    },
-    {
-        "id":8,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    },
-    {
-        "id":9,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    },
-    {
-        "id":10,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    },
-    {
-        "id":11,
-        "name":"Story Book",
-        "title":"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        "price":0,
-        "category":"Free",
-        "image":"image.jpg"
-    }
+  {
+    "id": 1,
+    "name": "C Programming",
+    "title": "Basics, functions and pointers.",
+    "price": 150,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Computer Networks",
+    "title": "OSI layers, TCP/IP and security.",
+    "price": 220,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Operating System",
+    "title": "Processes, memory and files.",
+    "price": 250,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 4,
+    "name": "DBMS",
+    "title": "SQL, ER models and transactions.",
+    "price": 180,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Data Structures",
+    "title": "Arrays, lists, stacks and sorting.",
+    "price": 200,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Software Engineering",
+    "title": "Life cycle models, design and testing.",
+    "price": 170,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Artificial Intelligence",
+    "title": "AI basics, search and representation.",
+    "price": 350,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Python Programming",
+    "title": "Loops, functions and OOP concepts.",
+    "price": 200,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Web Development",
+    "title": "HTML, CSS, JavaScript and React.",
+    "price": 300,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Compiler Design",
+    "title": "Lexical analysis and optimization.",
+    "price": 280,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Operating System",
+    "title": "Processes, scheduling and memory management.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Mathematics for CS",
+    "title": "Logic, sets, probability and graph theory.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Data Analytics",
+    "title": "Big data, Hadoop and Spark.",
+    "price": 320,
+    "category": "Paid",
+    "image": "image.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Cloud Computing",
+    "title": "Service models, virtualization and deployment.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Cyber Security",
+    "title": "Threats, firewalls, cryptography and encryption.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Mobile Development",
+    "title": "Android basics, UI design and navigation.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Machine Learning",
+    "title": "Supervised and unsupervised ML models.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Digital Logic Design",
+    "title": "Logic gates, flip-flops and minimization.",
+    "price": 0,
+    "category": "Free",
+    "image": "image.jpg"
+  }
 ]

@@ -9,37 +9,39 @@ function About() {
         <div>
           <img
             src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" 
-            alt="Bookstore"
+            alt="Courses"
             className="rounded-2xl shadow-lg"
           />
         </div>
 
         {/* Right Side Text */}
         <div>
-          <h1 className="text-4xl font-bold mb-4 text-primary">About Our Bookstore</h1>
+          <h1 className="text-4xl font-bold mb-4 text-primary">About Our Courses</h1>
           <p className="text-lg mb-4 leading-relaxed">
-            Welcome to <span className="font-semibold">BookNest</span>, your one-stop
-            destination for books of all genres. We believe books are more than just
-            pages – they are gateways to imagination, knowledge, and growth.
+            At <span className="font-semibold">BookNest</span>, we offer a balanced collection of <strong>paid and free learning resources</strong> 
+            to support students, professionals, and lifelong learners.
           </p>
           <p className="text-lg mb-4 leading-relaxed">
-            Our mission is to provide readers with a cozy space to discover stories,
-            learn new ideas, and connect with the love of reading. Whether you are a
-            student, a professional, or a casual reader, we have something special for you.
+            Our <strong>paid collection</strong> includes core computer science and advanced topics like 
+            <em> Operating Systems, Computer Networks, Artificial Intelligence, Web Development,</em> and 
+            <em> Data Analytics</em>. These are designed for learners who want in-depth structured knowledge 
+            at affordable pricing.
           </p>
           <p className="text-lg mb-6 leading-relaxed">
-            Explore our wide collection of novels, educational books, self-help,
-            and rare editions. At BookNest, we turn reading into an unforgettable experience.
+            Alongside, our <strong>free resources</strong> focus on <em>Machine Learning, Cyber Security, 
+            Cloud Computing, Mobile Development,</em> and <em>Mathematics for Computer Science</em>, empowering 
+            students to explore emerging technologies without cost barriers.
           </p>
 
-          {/* Highlight Box */}
+          {/* Highlight Box for Courses */}
           <div className="p-4 bg-primary text-white rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-2">📚 Why Choose Us?</h2>
+            <h2 className="text-xl font-semibold mb-2">🎓 Why Choose Our Courses?</h2>
             <ul className="list-disc list-inside space-y-1">
-              <li>Wide range of books across genres</li>
-              <li>Affordable pricing & discounts</li>
-              <li>Cozy reading environment</li>
-              <li>Passionate about literature & learning</li>
+              <li>Diverse learning paths – from C Programming to AI & Data Analytics</li>
+              <li>Affordable & transparent pricing (starting at just $150)</li>
+              <li>Free access to modern technologies like ML, Cloud & Cyber Security</li>
+              <li>Future-ready skills curated for industry & academics</li>
+              <li>Passion for making learning accessible and enjoyable</li>
             </ul>
           </div>
         </div>

@@ -11,9 +11,7 @@ function Banner() {
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+              Welcome to our website where learning meets creativity. Books and ideas are shared here with care and purpose. Explore the best titles, enjoy your time, and grow with every single page you read today!
             </p>
             <label className="input input-bordered flex items-center gap-2 w-full">
               <svg

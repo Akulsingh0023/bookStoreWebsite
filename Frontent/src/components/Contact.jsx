@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form"
 import axios from 'axios'
 import toast from 'react-hot-toast'
@@ -11,31 +11,38 @@ function Contact() {
     formState: { errors },
   } = useForm()
 
+  const navigate = useNavigate() // ✅ navigation hook
+
   const onSubmit = async (data) => {
-    // console.log("Form Data:", data)
-       const userInfo = {
-            fullname:data.fullname,
-            email: data.email,
-            message: data.message,
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      message: data.message,
+    }
+    await axios.post("http://localhost:4001/contact", userInfo)
+      .then((res) => {
+        if (res.data) {
+          toast.success("Message sent successfully");
+
+          // ✅ Save to localStorage
+          localStorage.setItem("ContactData", JSON.stringify(userInfo))
+
+          // ✅ Redirect to home after success
+          setTimeout(() => {
+            navigate("/")
+          }, 1500) // thoda delay taki toast dikh jaye
         }
-        await axios.post("http://localhost:4001/contact", userInfo)
-            .then((res) => {
-                console.log(res.data);
-                if (res.data) {
-                    toast.success("Message sent successfully");
-                }
-                localStorage.setItem("ContactData",JSON.stringify(userInfo))
-            }).catch((err) => {
-              if(err.response){
-                  console.log(err);
-                toast.error("Error: " + err.response.data.message);
-              }
-            })
+      }).catch((err) => {
+        if (err.response) {
+          toast.error("Error: " + err.response.data.message);
+        }
+      })
   }
 
   return (
-    <div className="flex h-screen items-center justify-center">
-      <div className="relative border-[2px] shadow-md p-5 rounded-md w-[500px]">
+    <div className="flex h-screen items-center justify-center bg-white dark:bg-gray-900">
+      <div className="relative border-[2px] shadow-md p-5 rounded-md w-[500px] 
+                      bg-white text-black dark:bg-gray-800 dark:text-white">
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* Close Button */}
           <Link
@@ -53,7 +60,8 @@ function Contact() {
             <input
               type="text"
               placeholder="Enter your name"
-              className="w-full px-3 py-2 border rounded-md outline-none"
+              className="w-full px-3 py-2 border rounded-md outline-none 
+                         bg-white text-black"
               {...register("fullname", { required: true })}
             />
             {errors.fullname && (
@@ -67,7 +75,8 @@ function Contact() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-3 py-2 border rounded-md outline-none"
+              className="w-full px-3 py-2 border rounded-md outline-none 
+                         bg-white text-black"
               {...register("email", { required: true })}
             />
             {errors.email && (
@@ -80,7 +89,8 @@ function Contact() {
             <label className="block mb-1">Message</label>
             <textarea
               placeholder="Write your message..."
-              className="textarea textarea-bordered w-full"
+              className="w-full px-3 py-2 border rounded-md outline-none 
+                         bg-white text-black"
               {...register("message", { required: true })}
             ></textarea>
             {errors.message && (

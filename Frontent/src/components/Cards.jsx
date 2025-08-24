@@ -2,7 +2,7 @@ import React from 'react'
 // import image from "../../public/list.json"
 
 function Cards({ item }) {
-    // console.log(item)
+    console.log(item)
     return (
         <>
             <div className="mt-4 my-3 p-3">
